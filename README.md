@@ -1,2 +1,2 @@
 # RepositorioDosCria
-So os Amigo tem Acesso
+So os Amigos gaymers tem Acesso
