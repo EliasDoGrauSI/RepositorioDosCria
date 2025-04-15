@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Código Muito Foda</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+            background-size: 300% 300%;
+            animation: gradientBG 10s ease infinite;
+            overflow: hidden;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon {
+            from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073; }
+            to { text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6; }
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="particles" id="particles-js"></div>
+    <div class="container">
+        <h1>MEU CÓDIGO É FODA! 🔥</h1>
+        <button class="btn" id="confetti-btn">CLICA AQUI!</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+    <script>
+        // Confetti Effect
+        const confettiBtn = document.getElementById('confetti-btn');
+        let confettiEffect;
+
+        confettiBtn.addEventListener('click', () => {
+            if (confettiEffect) confettiEffect.clear();
+            
+            const confettiSettings = { target: 'particles-js', max: 200, size: 1.5, animate: true };
+            confettiEffect = new ConfettiGenerator(confettiSettings);
+            confettiEffect.render();
+            
+            setTimeout(() => { confettiEffect.clear(); }, 3000);
+        });
+
+        // Floating Particles Background
+        document.addEventListener('DOMContentLoaded', () => {
+            const particles = document.getElementById('particles-js');
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = Math.random() * 10 + 5 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.backgroundColor = 'rgba(255, 255, 255, ' + Math.random() * 0.7 + ')';
+                particle.style.borderRadius = '50%';
+                particle.style.top = Math.random() * 100 + 'vh';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.opacity = Math.random();
+                
+                let xDir = (Math.random() - 0.5) * 2;
+                let yDir = (Math.random() - 0.5) * 2;
+                
+                setInterval(() => {
+                    let currentTop = parseFloat(particle.style.top);
+                    let currentLeft = parseFloat(particle.style.left);
+                    
+                    particle.style.top = (currentTop + yDir) + 'vh';
+                    particle.style.left = (currentLeft + xDir) + 'vw';
+                    
+                    if (currentTop <= 0 || currentTop >= 100) yDir *= -1;
+                    if (currentLeft <= 0 || currentLeft >= 100) xDir *= -1;
+                }, 100);
+                
+                particles.appendChild(particle);
+            }
+        });
+    </script>
 </body>
 </html>
