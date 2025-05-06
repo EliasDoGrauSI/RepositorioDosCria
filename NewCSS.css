@@ -62,22 +62,18 @@ li {
 }
 
 .conteudo {
-    width: 450px;
-    height: 300px;
+    width: 550px;
+    height: 650px;
     background-color: #050505;
     border-radius: 5px;
 }
 
-.conteudo h1 {
+.conteudo h1,h2,p {
+    text-align: justify;
     color: #ffc400;
     margin: 0;
     padding: 20px;
     text-align: center;
-}
-
-.container :hover {
-    transform: scale(1.1);
-    transition: 0.4s ease;
 }
 
 p {
@@ -111,7 +107,7 @@ footer {
     width: 100%;
     background-color: #000000; /* Smoked Glass */
     color: #F5F6F0; /* Pearl Glow */
-    padding: 15px;
+    padding: 10px 0;
     text-align: center;
     font-family: 'Playfair Display', serif;
     z-index: 3;
@@ -122,7 +118,7 @@ footer {
 }
 
 .footer-brand {
-    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif;
     color: #D4AF37; /* Golden Nectar */
     font-size: 1.2em;
     margin: 0 10px;
@@ -137,7 +133,7 @@ footer {
 .footer-links a {
     color: #F5F6F0;
     text-decoration: none;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Playfair Display', serif;
     transition: transform 0.3s ease, color 0.3s ease;
     transform: scale(1);
 }
