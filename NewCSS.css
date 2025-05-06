@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu {
+    display: flex;
+    height: 140px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+.Logo {
+    align-self: center;
+}
+
+.Logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.ancora {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ancora a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.ancora a:hover {
+    color: rgb(255, 187, 0);
+}
+
+h1,ul {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px
+}
+
+.container {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 0px 40px;
+}
+
+.conteudo {
+    width: 450px;
+    height: 250px;
+    background-color: #050505;
+    border-radius: 5px;
+}
+
+.conteudo h1 {
+    color: #ffc400;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    text-align: justify;
+   padding: 30px;
+   font-size: 18px;
+}
+
+
+header {
+    display: flex;
+   flex-direction: column;
+}
+ 
+
+.line {
+    width: 90%;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* Smoked Glass */
+    color: #F5F6F0; /* Pearl Glow */
+    padding: 15px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    font-family: 'Cinzel', serif;
+    color: #D4AF37; /* Golden Nectar */
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #F5F6F0;
+    text-decoration: none;
+    font-family: 'Playfair Display', sans-serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: scale(1);
+}
+
+.footer-links a:hover {
+    color: #D4AF37;
+    transform: scale(1.1);
+}
