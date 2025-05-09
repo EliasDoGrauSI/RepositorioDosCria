@@ -39,4 +39,27 @@ footer {
     height: 90%;
     object-fit: cover;
     justify-items: end;
+    float: right;
+}
+.imgesquerda {
+    width: 10%;
+    height: 90%;
+    object-fit: cover;
+    justify-items: end;
+    float: left;
+}
+.cadas{
+    text-align: left;
+}
+.serv{
+    background-color: yellow;
+    overflow: hidden;
+}
+.serv h1{
+    color: black;
+    padding: 14px 16px;
+    text-align: center;
+    float: center;
+    display: block;
+    
 }
