@@ -32,11 +32,11 @@ body{
 
 
 footer {
-    padding: 10px;
+    position: fixed;
+    bottom: 0;
 }
 .img {
     width: 10%;
     height: 90%;
     object-fit: cover;
 }
-
