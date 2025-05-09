@@ -10,7 +10,6 @@ body{
     background: black;
     color: yellow;
     box-sizing: border-box;
-    background: rgb(0, 0, 0);
     
     
 }
@@ -35,8 +34,8 @@ body{
     object-fit: cover;
 }
 .imgdireita {
-    width: 10%;
-    height: 90%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     justify-items: end;
     float: right;
@@ -53,7 +52,6 @@ body{
 }
 
 .serv{
-    background-color: #fff200;
     background-color: yellow;
     overflow: hidden;
 }
