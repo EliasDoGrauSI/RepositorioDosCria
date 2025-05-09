@@ -8,6 +8,7 @@
 body{
     background: black;
 }
+
 .fastwork{
     text-align: left;
     float: left;
@@ -28,3 +29,14 @@ body{
     display: block;
     text-decoration: none;
 }
+
+
+footer {
+    padding: 10px;
+}
+.img {
+    width: 10%;
+    height: 90%;
+    object-fit: cover;
+}
+
