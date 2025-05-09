@@ -8,3 +8,12 @@
 body{
     background: black;
 }
+
+footer {
+    padding: 10px;
+}
+.img {
+    width: 10%;
+    height: 90%;
+    object-fit: cover;
+}
