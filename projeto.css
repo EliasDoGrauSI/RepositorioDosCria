@@ -40,3 +40,9 @@ footer {
     height: 90%;
     object-fit: cover;
 }
+.imgdireita {
+    width: 10%;
+    height: 90%;
+    object-fit: cover;
+    justify-items: end;
+}
