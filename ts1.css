@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/* Reset e Estilos Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Nunito Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: black;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #000;
+    padding: 15px 0;
+    border-bottom: 1px solid yellow;
+}
+
+.cabecalho-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fastwork {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.cabecalho-direita {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 20px;
+}
+
+.navegacao a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.registro {
+    color: yellow;
+    font-size: 0.9rem;
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    flex: 1;
+    padding: 30px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Seção de Destaque */
+.destaque-servicos {
+    background-color: yellow;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.titulo-servicos {
+    color: black;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Seção Cadastro Empresa */
+.cadastro-empresa {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.titulo-cadastro {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.imagens-empresa {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.imagem-empresa {
+    width: 48%;
+    height: 450px;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imagem-empresa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Galeria de Serviços */
+.galeria-servicos {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.servico {
+    background-color: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
+}
+
+.servico img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.servico p {
+    padding: 10px;
+    text-align: center;
+    color: yellow;
+}
+
+/* Seção Dicas */
+.dicas-carreira {
+    padding: 20px;
+    background-color: #111;
+    border-radius: 8px;
+    margin: 0 20px 40px;
+}
+
+.dicas-carreira h2 {
+    color: yellow;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.dicas-carreira p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #111;
+    padding: 30px 0 10px;
+    border-top: 1px solid yellow;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-titulo {
+    color: yellow;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.rodape-coluna a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.rodape-coluna a:hover {
+    color: yellow;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+.rodape-creditos {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabecalho-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .imagens-empresa {
+        flex-direction: column;
+    }
+    
+    .imagem-empresa {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .servicos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho-direita {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+}
