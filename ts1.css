@@ -165,22 +165,26 @@ body {
 
 /* Seção Dicas */
 .dicas-carreira {
-    padding: 20px;
+    padding: 15px;
     background-color: #111;
     border-radius: 8px;
-    margin: 0 20px 40px;
+    height: 400px;
 }
 
-.dicas-carreira h2 {
-    color: yellow;
-    margin-bottom: 15px;
-    font-size: 1.3rem;
+.conteudo {
+    width: 450px;
+    padding: 50px 0px;
+    border-radius: 5px;
+    justify-content: flex-start;
+    text-align: justify;
 }
 
-.dicas-carreira p {
-    color: #ccc;
-    line-height: 1.6;
+.conteudo p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
 }
+
+
 
 /* Rodapé */
 .rodape {
