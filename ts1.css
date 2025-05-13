@@ -167,21 +167,29 @@ body {
 .dicas-carreira {
     padding: 15px;
     background-color: #111;
-    border-radius: 8px;
+    border-radius: 5px;
     height: 400px;
 }
 
 .conteudo {
+    display: flex;
     width: 450px;
     padding: 50px 0px;
     border-radius: 5px;
-    justify-content: flex-start;
     text-align: justify;
 }
 
 .conteudo p {
+    display: flex;
     font-size: 15px;
     color: rgb(255, 255, 255);
+}
+
+.imagem {
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 
