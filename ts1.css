@@ -10,8 +10,8 @@
 
 body {
     min-height: 100vh;
-    background: black;
-    color: yellow;
+    background: rgb(27, 27, 27);
+    color: rgb(177, 197, 0);
     display: flex;
     flex-direction: column;
 }
@@ -20,7 +20,7 @@ body {
 .cabecalho {
     background-color: #000;
     padding: 15px 0;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid rgb(177, 197, 0);
 }
 
 .cabecalho-container {
@@ -34,7 +34,7 @@ body {
 
 .fastwork {
     font-size: 1.5rem;
-    color: yellow;
+    color: rgb(177, 197, 0);
 }
 
 .cabecalho-direita {
@@ -49,7 +49,7 @@ body {
 }
 
 .navegacao a {
-    color: yellow;
+    color: rgb(177, 197, 0);
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -68,7 +68,7 @@ body {
 }
 
 .registro {
-    color: yellow;
+    color: rgb(177, 197, 0);
     font-size: 0.9rem;
 }
 
@@ -83,7 +83,7 @@ body {
 
 /* Seção de Destaque */
 .destaque-servicos {
-    background-color: yellow;
+    background-color: rgb(177, 197, 0);
     padding: 15px 0;
     margin-bottom: 30px;
 }
@@ -114,13 +114,21 @@ body {
 }
 
 .imagem-empresa {
-    width: 48%;
-    height: 450px;
-    border: 2px solid yellow;
+    width: 450px;
+    height: 416px;
+    border: 2px solid rgb(177, 197, 0);
     border-radius: 8px;
     overflow: hidden;
+    filter: grayscale(100%)
+
 }
 
+.imagem-empresa2 {
+  width: 500px;
+  height: 425px;
+  overflow: hidden;
+  margin-top: -10px;
+}
 .imagem-empresa img {
     width: 100%;
     height: 100%;
@@ -160,7 +168,7 @@ body {
 .servico p {
     padding: 10px;
     text-align: center;
-    color: yellow;
+    color: rgb(177, 197, 0);
 }
 
 /* Seção Dicas */
@@ -169,15 +177,29 @@ body {
     background-color: #111;
     border-radius: 5px;
     height: 400px;
+
 }
+
 
 .conteudo {
     display: flex;
     width: 450px;
     padding: 50px 0px;
     border-radius: 5px;
-    text-align: justify;
+    overflow: auto;
 }
+
+  .conteudo img {
+    float: right;
+    width: 40%; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 50px; /* Espaçamento entre a imagem e o texto */
+    margin-top: 20px; /* Espaçamento acima da imagem */
+    border-radius: 5px;
+
+    
+  }
+
 
 .conteudo p {
     display: flex;
@@ -196,9 +218,9 @@ body {
 
 /* Rodapé */
 .rodape {
-    background-color: #111;
+    background-color: #000000;
     padding: 30px 0 10px;
-    border-top: 1px solid yellow;
+    border-top: 1px solid rgb(177, 197, 0);
 }
 
 .rodape-container {
@@ -218,7 +240,7 @@ body {
 }
 
 .rodape-titulo {
-    color: yellow;
+    color: rgb(177, 197, 0);
     margin-bottom: 10px;
     font-size: 1.1rem;
 }
@@ -230,7 +252,7 @@ body {
 }
 
 .rodape-coluna a:hover {
-    color: yellow;
+    color: rgb(177, 197, 0);
 }
 
 .redes-sociais {
@@ -264,7 +286,7 @@ body {
     
     .imagem-empresa {
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
     
     .servicos-container {
@@ -286,8 +308,8 @@ body {
 .card {
     width: 450;
     height: 10000;
-    background-color: white;
-    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(255, 255, 255, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
     padding: 20px; /* Espaçamento interno do cartão */
     margin: 10px; /* Espaçamento externo do cartão */
   }
@@ -299,10 +321,10 @@ body {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #000000;
     font-weight: 700;
     font-size: 13px;
-    color: #47484b;
+    color: #ffffff;
   }
   
   .title::after {
@@ -311,7 +333,7 @@ body {
     height: 1px;
     position: absolute;
     bottom: -1px;
-    background-color: #47484b;
+    background-color: #ffffff;
   }
   
   .comments {
@@ -327,7 +349,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     margin: 0;
-    background-color: #f1f1f1;
+    background-color: #000000;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -381,7 +403,7 @@ body {
   .comment-react hr {
     width: 80%;
     height: 1px;
-    background-color: #dfe1e6;
+    background-color: #ffffff;
     margin: auto;
     border: 0;
   }
@@ -394,7 +416,7 @@ body {
     margin: auto;
     font-size: 13px;
     font-weight: 600;
-    color: #707277;
+    color: #ffffff;
   }
   
   .comment-container {
@@ -403,7 +425,7 @@ body {
     gap: 15px;
     padding: 15px; /* Espaçamento interno para o comentário */
     margin-bottom: 20px; /* Espaçamento abaixo do comentário */
-    border: 1px solid #ddd; /* Opcional: borda para destacar */
+    border: 1px solid #ffffff; /* Opcional: borda para destacar */
     border-radius: 5px;
   }
   
@@ -448,32 +470,32 @@ body {
   .comment-container .user .user-info span {
     font-weight: 700;
     font-size: 12px;
-    color: #47484b;
+    color: #ffffff;
   }
   
   .comment-container .user .user-info p {
     font-weight: 600;
     font-size: 10px;
-    color: #acaeb4;
+    color: #ffffff;
   }
   
   .comment-container .comment-content {
     font-size: 12px;
     line-height: 16px;
     font-weight: 600;
-    color: #5f6064;
+    color: #ffffff;
   }
   
   .text-box {
     width: 100%;
     height: fit-content;
-    background-color: #f1f1f1;
+    background-color: #000000;
     padding: 8px;
     margin-top: 20px; /* Espaçamento acima da caixa de texto */
   }
   
   .text-box .box-container {
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 8px 8px 21px 21px;
     padding: 8px;
   }
@@ -482,14 +504,14 @@ body {
     width: 100%; /* Largura total */
     height: 40px;
     resize: none;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     padding: 10px; /* Espaçamento interno */
     margin-bottom: 10px; /* Espaçamento abaixo do textarea */
     padding: 12px 12px 10px 12px;
     font-size: 13px;
     outline: none;
-    caret-color: #0a84ff;
+    caret-color: rgb(177, 197, 0);
   }
   
   .text-box .formatting {
@@ -515,18 +537,18 @@ body {
   }
   
   .text-box .formatting button:hover {
-    background-color: #f1f1f1;
+    background-color: rgb(177, 197, 0);
   }
   
   .text-box .formatting .send {
     width: 30px;
     height: 30px;
-    background-color: #0a84ff;
+    background-color: rgb(177, 197, 0);
     margin: 0 0 0 auto;
   }
   
   .text-box .formatting .send:hover {
-    background-color: #026eda;
+    background-color: #272727;
   }
   
   @keyframes ripple {
