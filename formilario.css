@@ -1,0 +1,16 @@
+@charset "UFT-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: left; /* Alinha o texto à esquerda */
+    background: rgb(18, 18, 18);
+    color: rgb(177, 197, 0);
+    font-size: 25px;
+    margin: 20 auto; /* Centraliza o conteúdo horizontalmente */
+    border-radius: 20px;
+    border : 2px solid rgb(177, 197, 0);
+    padding: 20px;
+    margin-top: 7.5%;
+    
+}
