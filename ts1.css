@@ -2,125 +2,123 @@
 
 /* Reset e Estilos Globais */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Nunito Sans", sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background: rgb(27, 27, 27);
-    color: rgb(177, 197, 0);
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  background: rgb(27, 27, 27);
+  color: rgb(177, 197, 0);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Cabeçalho */
 .cabecalho {
-    background-color: #000;
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(177, 197, 0);
+  background-color: #000;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(177, 197, 0);
 }
 
 .cabecalho-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fastwork {
-    font-size: 1.5rem;
-    color: rgb(177, 197, 0);
+  font-size: 1.5rem;
+  color: rgb(177, 197, 0);
 }
 
 .cabecalho-direita {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .navegacao {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .navegacao a {
-    color: rgb(177, 197, 0);
-    text-decoration: none;
-    font-size: 0.9rem;
+  color: rgb(177, 197, 0);
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .perfil {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo-perfil {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .registro {
-    color: rgb(177, 197, 0);
-    font-size: 0.9rem;
+  color: rgb(177, 197, 0);
+  font-size: 0.9rem;
 }
 
 /* Conteúdo Principal */
 .conteudo-principal {
-    flex: 1;
-    padding: 30px 0;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
+  flex: 1;
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Seção de Destaque */
 .destaque-servicos {
-    background-color: rgb(177, 197, 0);
-    padding: 15px 0;
-    margin-bottom: 30px;
+  background-color: rgb(177, 197, 0);
+  padding: 15px 0;
+  margin-bottom: 30px;
 }
 
 .titulo-servicos {
-    color: black;
-    text-align: center;
-    font-size: 1.8rem;
+  color: black;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 /* Seção Cadastro Empresa */
 .cadastro-empresa {
-    padding: 0 20px;
-    margin-bottom: 40px;
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
 .titulo-cadastro {
-    color: white;
-    text-align: left;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+  color: white;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .imagens-empresa {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .imagem-empresa {
-    width: 450px;
-    height: 416px;
-    border: 2px solid rgb(177, 197, 0);
-    border-radius: 8px;
-    overflow: hidden;
-    filter: grayscale(100%)
-
+  width: 450px;
+  height: 416px;
+  border: 2px solid rgb(177, 197, 0);
+  border-radius: 8px;
+  overflow: hidden;
+  filter: grayscale(100%);
 }
 
 .imagem-empresa2 {
@@ -130,435 +128,416 @@ body {
   margin-top: -10px;
 }
 .imagem-empresa img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Galeria de Serviços */
 .galeria-servicos {
-    padding: 0 20px;
-    margin-bottom: 40px;
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
 .servicos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .servico {
-    background-color: #111;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .servico:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
 }
 
 .servico img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 .servico p {
-    padding: 10px;
-    text-align: center;
-    color: rgb(177, 197, 0);
+  padding: 10px;
+  text-align: center;
+  color: rgb(177, 197, 0);
 }
 
 /* Seção Dicas */
-.dicas-carreira {
-    padding: 15px;
-    background-color: #111;
-    border-radius: 5px;
-    height: 400px;
 
+.dicas-de-carreira {
+  padding: 15px;
 }
-
 
 .conteudo {
-    display: flex;
-    width: 450px;
-    padding: 50px 0px;
-    border-radius: 5px;
-    overflow: auto;
+  text-align: justify;
+  color: whitesmoke;
+  margin-top: 10px;
 }
 
-  .conteudo img {
-    float: right;
-    width: 40%; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-left: 50px; /* Espaçamento entre a imagem e o texto */
-    margin-top: 20px; /* Espaçamento acima da imagem */
-    border-radius: 5px;
-
-    
-  }
-
-
-.conteudo p {
-    display: flex;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
+.box {
+  display: flex;
+  height: 500px;
+  justify-content: space-around;
+  margin-top: 15px;
 }
 
-.imagem {
-    width: 450px;
-    height: 300px;
-    border-radius: 5px;
-    object-fit: cover;
+.box img {
+  border-radius: 5px;
 }
+
+
 
 
 
 /* Rodapé */
 .rodape {
-    background-color: #000000;
-    padding: 30px 0 10px;
-    border-top: 1px solid rgb(177, 197, 0);
+  background-color: #000000;
+  padding: 30px 0 10px;
+  border-top: 1px solid rgb(177, 197, 0);
 }
 
 .rodape-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .rodape-coluna {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .rodape-titulo {
-    color: rgb(177, 197, 0);
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+  color: rgb(177, 197, 0);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .rodape-coluna a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 0.9rem;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .rodape-coluna a:hover {
-    color: rgb(177, 197, 0);
+  color: rgb(177, 197, 0);
 }
 
 .redes-sociais {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .redes-sociais img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .rodape-creditos {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    color: #777;
-    font-size: 0.8rem;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #777;
+  font-size: 0.8rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .cabecalho-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .imagens-empresa {
-        flex-direction: column;
-    }
-    
-    .imagem-empresa {
-        width: 100%;
-        height: 250px;
-    }
-    
-    .servicos-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .cabecalho-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .imagens-empresa {
+    flex-direction: column;
+  }
+
+  .imagem-empresa {
+    width: 100%;
+    height: 250px;
+  }
+
+  .servicos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
-    .cabecalho-direita {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .servicos-container {
-        grid-template-columns: 1fr;
-    }
-}
-/* From Uiverse.io by zanina-yassine */ 
-.card {
-    width: 450;
-    height: 10000;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(255, 255, 255, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Espaçamento interno do cartão */
-    margin: 10px; /* Espaçamento externo do cartão */
-  }
-  
-  .title {
-    width: 100%;
-    height: 50px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    border-bottom: 1px solid #000000;
-    font-weight: 700;
-    font-size: 13px;
-    color: #ffffff;
-  }
-  
-  .title::after {
-    content: '';
-    width: 8ch;
-    height: 1px;
-    position: absolute;
-    bottom: -1px;
-    background-color: #ffffff;
-  }
-  
-  .comments {
-    display: grid;
-    grid-template-columns: 35px 1fr;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .comment-react {
-    width: 35px;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0;
-    background-color: #000000;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaçamento entre o botão, linha e número */
-    margin-bottom: 15px; /* Espaçamento abaixo do bloco de reações */
-  }
-  
-  .comment-react button {
-    width: 35px;
-    height: 35px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 0;
-    outline: none;
-  }
-  
-  .comment-react button:after {
-    content: '';
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: -2.5px;
-    top: -2.5px;
-    background-color: #f5356e;
-    border-radius: 50%;
-    z-index: 0;
-    transform: scale(0);
-  }
-  
-  .comment-react button svg {
-    position: relative;
-    z-index: 9;
-  }
-  
-  .comment-react button:hover:after {
-    animation: ripple 0.6s ease-in-out forwards;
-  }
-  
-  .comment-react button:hover svg {
-    fill: #f5356e;
-  }
-  
-  .comment-react button:hover svg path {
-    stroke: #f5356e;
-    fill: #f5356e;
-  }
-  
-  .comment-react hr {
-    width: 80%;
-    height: 1px;
-    background-color: #ffffff;
-    margin: auto;
-    border: 0;
-  }
-  
-  .comment-react span {
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-size: 13px;
-    font-weight: 600;
-    color: #ffffff;
-  }
-  
-  .comment-container {
-    display: flex;
+  .cabecalho-direita {
     flex-direction: column;
     gap: 15px;
-    padding: 15px; /* Espaçamento interno para o comentário */
-    margin-bottom: 20px; /* Espaçamento abaixo do comentário */
-    border: 1px solid #ffffff; /* Opcional: borda para destacar */
-    border-radius: 5px;
   }
-  
-  .comment-container .user {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    gap: 10px;
+
+  .servicos-container {
+    grid-template-columns: 1fr;
   }
-  
-  .comment-container .user .user-pic {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-    border-radius: 50%;
+}
+/* From Uiverse.io by zanina-yassine */
+.card {
+  width: 450;
+  height: 10000;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(255, 255, 255, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Espaçamento interno do cartão */
+  margin: 10px; /* Espaçamento externo do cartão */
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #000000;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.title::after {
+  content: "";
+  width: 8ch;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #ffffff;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.comment-react {
+  width: 35px;
+  height: fit-content;
+  grid-template-columns: auto;
+  margin: 0;
+  background-color: #000000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaçamento entre o botão, linha e número */
+  margin-bottom: 15px; /* Espaçamento abaixo do bloco de reações */
+}
+
+.comment-react button {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.comment-react button:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -2.5px;
+  top: -2.5px;
+  background-color: #f5356e;
+  border-radius: 50%;
+  z-index: 0;
+  transform: scale(0);
+}
+
+.comment-react button svg {
+  position: relative;
+  z-index: 9;
+}
+
+.comment-react button:hover:after {
+  animation: ripple 0.6s ease-in-out forwards;
+}
+
+.comment-react button:hover svg {
+  fill: #f5356e;
+}
+
+.comment-react button:hover svg path {
+  stroke: #f5356e;
+  fill: #f5356e;
+}
+
+.comment-react hr {
+  width: 80%;
+  height: 1px;
+  background-color: #ffffff;
+  margin: auto;
+  border: 0;
+}
+
+.comment-react span {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px; /* Espaçamento interno para o comentário */
+  margin-bottom: 20px; /* Espaçamento abaixo do comentário */
+  border: 1px solid #ffffff; /* Opcional: borda para destacar */
+  border-radius: 5px;
+}
+
+.comment-container .user {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+}
+
+.comment-container .user .user-pic {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+
+.comment-container .user .user-pic:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 50%;
+  background-color: #0fc45a;
+  border: 2px solid #ffffff;
+}
+
+.comment-container .user .user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+}
+
+.comment-container .user .user-info span {
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.comment-container .user .user-info p {
+  font-weight: 600;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.comment-container .comment-content {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.text-box {
+  width: 100%;
+  height: fit-content;
+  background-color: #000000;
+  padding: 8px;
+  margin-top: 20px; /* Espaçamento acima da caixa de texto */
+}
+
+.text-box .box-container {
+  background-color: #000000;
+  border-radius: 8px 8px 21px 21px;
+  padding: 8px;
+}
+
+.text-box textarea {
+  width: 100%; /* Largura total */
+  height: 40px;
+  resize: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Espaçamento abaixo do textarea */
+  padding: 12px 12px 10px 12px;
+  font-size: 13px;
+  outline: none;
+  caret-color: rgb(177, 197, 0);
+}
+
+.text-box .formatting {
+  grid-template-columns: auto auto auto auto auto 1fr;
+  display: flex;
+  gap: 8px; /* Espaçamento entre os botões de formatação */
+}
+
+.text-box .formatting button {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  padding: 8px; /* Espaçamento interno dos botões */
+  cursor: pointer;
+  outline: none;
+}
+
+.text-box .formatting button:hover {
+  background-color: rgb(177, 197, 0);
+}
+
+.text-box .formatting .send {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(177, 197, 0);
+  margin: 0 0 0 auto;
+}
+
+.text-box .formatting .send:hover {
+  background-color: #272727;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.6;
   }
-  
-  .comment-container .user .user-pic:after {
-    content: '';
-    width: 9px;
-    height: 9px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    border-radius: 50%;
-    background-color: #0fc45a;
-    border: 2px solid #ffffff;
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
   }
-  
-  .comment-container .user .user-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 3px;
-  }
-  
-  .comment-container .user .user-info span {
-    font-weight: 700;
-    font-size: 12px;
-    color: #ffffff;
-  }
-  
-  .comment-container .user .user-info p {
-    font-weight: 600;
-    font-size: 10px;
-    color: #ffffff;
-  }
-  
-  .comment-container .comment-content {
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 600;
-    color: #ffffff;
-  }
-  
-  .text-box {
-    width: 100%;
-    height: fit-content;
-    background-color: #000000;
-    padding: 8px;
-    margin-top: 20px; /* Espaçamento acima da caixa de texto */
-  }
-  
-  .text-box .box-container {
-    background-color: #000000;
-    border-radius: 8px 8px 21px 21px;
-    padding: 8px;
-  }
-  
-  .text-box textarea {
-    width: 100%; /* Largura total */
-    height: 40px;
-    resize: none;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 10px; /* Espaçamento interno */
-    margin-bottom: 10px; /* Espaçamento abaixo do textarea */
-    padding: 12px 12px 10px 12px;
-    font-size: 13px;
-    outline: none;
-    caret-color: rgb(177, 197, 0);
-  }
-  
-  .text-box .formatting {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto 1fr;
-    display: flex;
-    gap: 8px; /* Espaçamento entre os botões de formatação */
-  }
-  
-  .text-box .formatting button {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border-radius: 50%;
-    border: none;
-    padding: 8px; /* Espaçamento interno dos botões */
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .text-box .formatting button:hover {
-    background-color: rgb(177, 197, 0);
-  }
-  
-  .text-box .formatting .send {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(177, 197, 0);
-    margin: 0 0 0 auto;
-  }
-  
-  .text-box .formatting .send:hover {
-    background-color: #272727;
-  }
-  
-  @keyframes ripple {
-    0% {
-      transform: scale(0);
-      opacity: 0.6;
-    }
-  
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
+}
