@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+    background: linear-gradient(135deg, #fff 0%, #af995d 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    min-height: 100vh;
+    font-size: 20px;
+    animation: bg-move 8s ease-in-out infinite alternate;
+}
+@keyframes bg-move {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffffcc;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 40px 32px;
+    animation: fade-in 1.2s ease;
+}
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+h1 {
+    color: #191cd2;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    animation: text-glow 2s infinite alternate;
+}
+@keyframes text-glow {
+    0% { text-shadow: 0 0 0 #191cd2; }
+    100% { text-shadow: 0 0 16px #191cd277; }
+}
+.job {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e3e3e3;
+    opacity: 0;
+    animation: section-fade 1s forwards;
+}
+.job:nth-of-type(1) { animation-delay: 0.4s; }
+.job:nth-of-type(2) { animation-delay: 0.7s; }
+@keyframes section-fade {
+    to { opacity: 1; }
+}
+.job:last-child {
+    border-bottom: none;
+}
+.job-title {
+    font-size: 1.3rem;
+    color: #191cd2;
+    margin-bottom: 4px;
+    animation: job-title-pop 1.2s;
+}
+@keyframes job-title-pop {
+    0% { transform: scale(0.9); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+.job-company {
+    font-weight: bold;
+    color: #333;
+}
+.job-period {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+ul {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+a.voltar {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 10px 22px;
+    background: #191cd2;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px #191cd233;
+    animation: voltar-fade 1.5s;
+}
+a.voltar:hover {
+    background: #125ea7;
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 4px 16px #191cd277;
+}
+@keyframes voltar-fade {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 8px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+}

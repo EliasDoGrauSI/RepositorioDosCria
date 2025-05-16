@@ -1,0 +1,181 @@
+Vamos resolver cada questão passo a passo:
+
+---
+
+### 1. **Crescimento Populacional**
+**Dados:**
+- População inicial (P₀) = 50.000 habitantes
+- Taxa de crescimento (r) = 2% ao ano = 0,02
+- Tempo (t) = 2025 - 2000 = 25 anos
+
+**Fórmula do crescimento exponencial:**
+\[ P = P_0 \times (1 + r)^t \]
+\[ P = 50.000 \times (1 + 0,02)^{25} \]
+\[ P = 50.000 \times (1,02)^{25} \]
+
+Calculando \( (1,02)^{25} \):
+\[ (1,02)^{25} \approx 1,6406 \]
+
+\[ P \approx 50.000 \times 1,6406 \]
+\[ P \approx 82.030 \]
+
+**Resposta mais próxima:** B) 82.590 habitantes
+
+---
+
+### 2. **Física - Movimento Retilíneo Uniforme**
+**Dados:**
+- Velocidade (v) = 80 km/h
+- Tempo (t) = 3,5 horas
+
+**Distância percorrida:**
+\[ d = v \times t \]
+\[ d = 80 \times 3,5 \]
+\[ d = 280 \text{ km} \]
+
+**Resposta correta:** B) 280 km
+
+---
+
+### 3. **Economia - Juros Simples**
+**Dados:**
+- Capital inicial (C) = R$ 5.000
+- Taxa de juros (i) = 3% ao mês = 0,03
+- Tempo (t) = 6 meses
+
+**Juros simples:**
+\[ J = C \times i \times t \]
+\[ J = 5.000 \times 0,03 \times 6 \]
+\[ J = 900 \]
+
+**Montante:**
+\[ M = C + J \]
+\[ M = 5.000 + 900 \]
+\[ M = 5.900 \]
+
+**Resposta correta:** A) R$ 5.900,00
+
+---
+
+### 4. **Engenharia - Cálculo de Áreas**
+**Dados:**
+- Comprimento = 4 m
+- Largura = 1,5 m
+
+**Área do retângulo:**
+\[ A = \text{comprimento} \times \text{largura} \]
+\[ A = 4 \times 1,5 \]
+\[ A = 6 \text{ m²} \]
+
+**Resposta correta:** B) 6 m²
+
+---
+
+### 5. **Biologia - Crescimento Exponencial de Bactérias**
+**Dados:**
+- População inicial (P₀) = 1.000 bactérias
+- Tempo de duplicação = 4 horas
+- Tempo total (t) = 16 horas
+
+**Número de duplicações:**
+\[ n = \frac{t}{\text{tempo de duplicação}} \]
+\[ n = \frac{16}{4} \]
+\[ n = 4 \]
+
+**População final:**
+\[ P = P_0 \times 2^n \]
+\[ P = 1.000 \times 2^4 \]
+\[ P = 1.000 \times 16 \]
+\[ P = 16.000 \]
+
+**Resposta correta:** A) 16.000 bactérias
+
+---
+
+### 6. **Química - Reações de Primeira Ordem**
+**Dados:**
+- Constante de velocidade (k) = 0,5 h⁻¹
+
+**Tempo de meia-vida (t₁/₂) para reação de primeira ordem:**
+\[ t_{1/2} = \frac{\ln(2)}{k} \]
+\[ t_{1/2} = \frac{0,693}{0,5} \]
+\[ t_{1/2} = 1,386 \text{ horas} \]
+
+**Resposta mais próxima:** B) 1 horas
+
+---
+
+### 7. **Matemática - Cálculo do Valor Presente**
+**Dados:**
+- Valor futuro (FV) = R$ 10.000
+- Taxa de juros (r) = 4% ao ano = 0,04
+- Tempo (t) = 5 anos
+
+**Valor presente (PV):**
+\[ PV = \frac{FV}{(1 + r)^t} \]
+\[ PV = \frac{10.000}{(1 + 0,04)^5} \]
+\[ PV = \frac{10.000}{1,21665} \]
+\[ PV \approx 8.219,27 \]
+
+**Resposta correta:** A) R$ 8.219,27
+
+---
+
+### 8. **Meteorologia - Conversão de Temperaturas**
+**Dados:**
+- Temperatura inicial = 20°C
+- Temperatura final = 0°C
+- Tempo total = 10 horas
+
+**Taxa de queda de temperatura:**
+\[ \text{Taxa} = \frac{20 - 0}{10} = 2°C \text{ por hora} \]
+
+**Temperatura após 6 horas:**
+\[ T = 20 - (2 \times 6) \]
+\[ T = 20 - 12 \]
+\[ T = 8°C \]
+
+**Resposta correta:** A) 8°C
+
+---
+
+### 9. **Arquitetura - Cálculo de Consumo de Tinta**
+**Dados:**
+- Área da parede = 10 m × 3,5 m = 35 m²
+- Cobertura por lata = 15 m²
+
+**Número de latas:**
+\[ n = \frac{35}{15} \]
+\[ n \approx 2,33 \]
+
+**Como não se pode comprar fração de lata, arredonda-se para cima:** 3 latas.
+
+**Resposta correta:** A) 3 latas
+
+---
+
+### 10. **Administração - Análise de Custo x Volume**
+**Dados:**
+- Função de custo: \( C(x) = 100 + 5x \)
+- Número de unidades (x) = 20
+
+**Custo total:**
+\[ C(20) = 100 + 5 \times 20 \]
+\[ C(20) = 100 + 100 \]
+\[ C(20) = 200 \]
+
+**Resposta correta:** A) R$ 200
+
+---
+
+### Respostas Finais:
+1. **B) 82.590 habitantes**  
+2. **B) 280 km**  
+3. **A) R$ 5.900,00**  
+4. **B) 6 m²**  
+5. **A) 16.000 bactérias**  
+6. **B) 1 horas**  
+7. **A) R$ 8.219,27**  
+8. **A) 8°C**  
+9. **A) 3 latas**  
+10. **A) R$ 200**
