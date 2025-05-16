@@ -1,7 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(Imagens/textured-black-background-vector.jpg);
+    background: black;
+    background-image: url();
    background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,10 +14,9 @@ body {
 }
 
 form {
-    background-color: #ffffff;
+    background: linear-gradient(180deg, #f3be2b 0%, #00000000 100%);
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
 }
@@ -23,14 +25,14 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #333333;
+    color: #ffffff;
 }
 
 input, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #cccccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -66,3 +68,4 @@ button:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
 }
+
