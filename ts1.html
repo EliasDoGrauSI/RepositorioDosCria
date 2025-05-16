@@ -149,6 +149,28 @@
     <section class="destaque-servicos">
       <h2 class="titulo-servicos">Serviços disponíveis</h2>
     </section>
+
+    <script>
+      // Seleciona o título
+      const titulo = document.querySelector('.titulo-servicos');
+  
+      // Função para verificar se o elemento está visível
+      function checkVisibility() {
+        const rect = titulo.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+  
+        // Verifica se o título está na área visível
+        if (rect.top >= 0 && rect.top <= windowHeight * 0.8) {
+          titulo.classList.add('visible');
+        }
+      }
+  
+      // Executa ao rolar a página
+      window.addEventListener('scroll', checkVisibility);
+  
+      // Verifica ao carregar a página
+      checkVisibility();
+    </script>
     
 
     <section class="galeria-servicos">

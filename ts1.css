@@ -94,6 +94,28 @@ body {
     font-size: 1.8rem;
 }
 
+@keyframes slide {
+  0% { transform: translateX(0); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; } /* Aparece sem deslocamento */
+}
+
+/* Estilo do título */
+.titulo-servicos {
+  font-size: 2rem;
+  text-align: center;
+  transform: translateX(0); /* Posição inicial */
+  opacity: 0; /* Invisível até a animação */
+  transition: all 0.5s ease-in-out; /* Suaviza mudanças */
+}
+
+/* Classe aplicada quando o título está visível */
+.titulo-servicos.visible {
+  animation: slide 1s ease-in-out forwards; /* Aplica a animação */
+}
+
+/* Espaço para simular rolagem */
+
+
 /* Seção Cadastro Empresa */
 .cadastro-empresa {
     padding: 0 20px;
