@@ -122,6 +122,14 @@ body {
     filter: grayscale(100%)
 
 }
+.imagem-empresa:hover {
+    filter: grayscale(0%);
+    transition: filter 0.3s;
+    border-radius: 
+    50% 10% 50% 10%/
+    50% 10% 50% 10%;
+    transition: border-radius 1s;
+}
 
 .imagem-empresa2 {
   width: 500px;
