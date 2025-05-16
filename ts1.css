@@ -94,6 +94,28 @@ body {
   font-size: 1.8rem;
 }
 
+@keyframes slide {
+  0% { transform: translateX(0); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; } /* Aparece sem deslocamento */
+}
+
+/* Estilo do título */
+.titulo-servicos {
+  font-size: 2rem;
+  text-align: center;
+  transform: translateX(0); /* Posição inicial */
+  opacity: 0; /* Invisível até a animação */
+  transition: all 0.5s ease-in-out; /* Suaviza mudanças */
+}
+
+/* Classe aplicada quando o título está visível */
+.titulo-servicos.visible {
+  animation: slide 1s ease-in-out forwards; /* Aplica a animação */
+}
+
+/* Espaço para simular rolagem */
+
+
 /* Seção Cadastro Empresa */
 .cadastro-empresa {
   padding: 0 20px;
@@ -119,6 +141,14 @@ body {
   border-radius: 8px;
   overflow: hidden;
   filter: grayscale(100%);
+}
+.imagem-empresa:hover {
+    filter: grayscale(0%);
+    transition: filter 0.3s;
+    border-radius: 
+    50% 10% 50% 10%/
+    50% 10% 50% 10%;
+    transition: border-radius 1s;
 }
 
 .imagem-empresa2 {
@@ -153,8 +183,10 @@ body {
 }
 
 .servico:hover {
+
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
+
 }
 
 .servico img {
