@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background: black;
-    background-image: url();
+    background-image: url('Imagens/textured-black-background-vector.jpg');
    background-position: center;
    background-size: cover;
    background-attachment: fixed;
@@ -14,11 +14,13 @@ body {
 }
 
 form {
-    background: linear-gradient(180deg, #f3be2b 0%, #00000000 100%);
-    padding: 20px 30px;
+    background: linear-gradient(180deg, #52504b 0%, #000000 100%);
+    padding: 20px 40px;
+    padding-right: 57.5px;
     border-radius: 10px;
     width: 100%;
     max-width: 400px;
+    
 }
 
 label {
