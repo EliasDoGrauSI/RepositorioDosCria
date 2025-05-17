@@ -88,12 +88,6 @@ body {
   margin-bottom: 30px;
 }
 
-.titulo-servicos {
-  color: black;
-  text-align: center;
-  font-size: 1.8rem;
-}
-
 @keyframes slide {
   0% { transform: translateX(0); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; } /* Aparece sem deslocamento */
@@ -144,7 +138,6 @@ body {
 }
 .imagem-empresa:hover {
     filter: grayscale(0%);
-    transition: filter 0.3s;
     border-radius: 
     50% 10% 50% 10%/
     50% 10% 50% 10%;
