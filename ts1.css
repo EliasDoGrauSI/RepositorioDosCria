@@ -88,6 +88,7 @@ body {
   margin-bottom: 30px;
 }
 
+
 .titulo-servicos {
   color: #000;
   text-align: center;
@@ -163,7 +164,7 @@ body {
 
 .servico:hover {
 
-  transform: translateY(-5px);
+  transform: translate(-20px, -30px);
   box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
 
 }
