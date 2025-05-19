@@ -52,7 +52,7 @@ select {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #ffcc00;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -64,7 +64,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #272727;
 }
 
 button:disabled {
