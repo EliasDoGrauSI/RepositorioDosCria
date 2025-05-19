@@ -10,17 +10,17 @@
 
 body {
   min-height: 100vh;
-  background: rgb(27, 27, 27);
-  color: rgb(177, 197, 0);
+  background: #121212;
+  color: #F5CB5C;
   display: flex;
   flex-direction: column;
 }
 
 /* Cabeçalho */
 .cabecalho {
-  background-color: #000;
+  background-color: #000000;
   padding: 15px 0;
-  border-bottom: 1px solid rgb(177, 197, 0);
+  border-bottom: 1px solid #F5CB5C;
 }
 
 .cabecalho-container {
@@ -34,7 +34,7 @@ body {
 
 .fastwork {
   font-size: 1.5rem;
-  color: rgb(177, 197, 0);
+  color: #F5CB5C;
 }
 
 .cabecalho-direita {
@@ -49,7 +49,7 @@ body {
 }
 
 .navegacao a {
-  color: rgb(177, 197, 0);
+  color: #F5CB5C;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -68,7 +68,7 @@ body {
 }
 
 .registro {
-  color: rgb(177, 197, 0);
+  color: #F5CB5C;
   font-size: 0.9rem;
 }
 
@@ -83,13 +83,14 @@ body {
 
 /* Seção de Destaque */
 .destaque-servicos {
-  background-color: rgb(177, 197, 0);
+  background-color: #F5CB5C;
   padding: 15px 0;
   margin-bottom: 30px;
 }
 
 /* Estilo do título */
 .titulo-servicos {
+  color: #000000;
   font-size: 2rem;
   text-align: center;
 }
@@ -115,7 +116,7 @@ body {
 .imagem-empresa {
   width: 450px;
   height: 416px;
-  border: 2px solid rgb(177, 197, 0);
+  border: 2px solid #F5CB5C;
   border-radius: 8px;
   overflow: hidden;
   filter: grayscale(100%);
@@ -151,7 +152,7 @@ body {
 }
 
 .servico {
-  background-color: #111;
+  background-color: #F5CB5C;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -159,7 +160,7 @@ body {
 
 .servico:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
+  box-shadow: 0 5px 15px #F5CB5C;
 }
 
 .servico img {
@@ -171,7 +172,7 @@ body {
 .servico p {
   padding: 10px;
   text-align: center;
-  color: rgb(177, 197, 0);
+  color: #000000;
 }
 
 /* Seção Dicas */
@@ -206,7 +207,7 @@ body {
 .rodape {
   background-color: #000000;
   padding: 30px 0 10px;
-  border-top: 1px solid rgb(177, 197, 0);
+  border-top: 1px solid #F5CB5C;
 }
 
 .rodape-container {
@@ -226,7 +227,7 @@ body {
 }
 
 .rodape-titulo {
-  color: rgb(177, 197, 0);
+  color: #F5CB5C;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
@@ -238,7 +239,7 @@ body {
 }
 
 .rodape-coluna a:hover {
-  color: rgb(177, 197, 0);
+  color: #F5CB5C;
 }
 
 .redes-sociais {
@@ -294,7 +295,7 @@ body {
 .card {
   width: 450;
   height: 10000;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   box-shadow:
     0px 187px 75px rgba(0, 0, 0, 0.01),
     0px 105px 63px rgba(0, 0, 0, 0.05),
@@ -500,7 +501,7 @@ body {
   padding: 12px 12px 10px 12px;
   font-size: 13px;
   outline: none;
-  caret-color: rgb(177, 197, 0);
+  caret-color: #F5CB5C;
 }
 
 .text-box .formatting {
@@ -525,13 +526,13 @@ body {
 }
 
 .text-box .formatting button:hover {
-  background-color: rgb(177, 197, 0);
+  background-color: #F5CB5C;
 }
 
 .text-box .formatting .send {
   width: 30px;
   height: 30px;
-  background-color: rgb(177, 197, 0);
+  background-color: #F5CB5C;
   margin: 0 0 0 auto;
 }
 
