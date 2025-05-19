@@ -192,10 +192,12 @@ body {
   height: 500px;
   justify-content: space-around;
   margin-top: 15px;
+  
 }
 
 .box img {
   border-radius: 5px;
+  width: 333px;
 }
 
 .box img:hover {
