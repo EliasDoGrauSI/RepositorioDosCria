@@ -191,7 +191,7 @@ body {
   height: 500px;
   justify-content: space-around;
   margin-top: 15px;
-  
+  gap: 6px; 
 }
 
 .box img .overlay{
