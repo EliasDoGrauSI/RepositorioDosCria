@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   background: #121212;
-  color: #ffcc00;
+  color: #1976d2; /* alterado de #ffcc00 */
   display: flex;
   flex-direction: column;
 }
@@ -20,7 +20,7 @@ body {
 .cabecalho {
   background-color: #000000;
   padding: 15px 0;
-  border-bottom: 1px solid #ffcc00;
+  border-bottom: 1px solid #1976d2; /* alterado de #ffcc00 */
 }
 
 .cabecalho-container {
@@ -34,7 +34,7 @@ body {
 
 .fastwork {
   font-size: 1.5rem;
-  color: #ffcc00;
+  color: #1976d2; /* alterado de #ffcc00 */
 }
 
 .cabecalho-direita {
@@ -49,7 +49,7 @@ body {
 }
 
 .navegacao a {
-  color: #ffcc00;
+  color: #1976d2; /* alterado de #ffcc00 */
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -68,7 +68,7 @@ body {
 }
 
 .registro {
-  color: #ffcc00;
+  color: #1976d2; /* alterado de #ffcc00 */
   font-size: 0.9rem;
 }
 
@@ -83,7 +83,7 @@ body {
 
 /* Seção de Destaque */
 .destaque-servicos {
-  background-color: #ffcc00;
+  background-color: #1976d2; /* alterado de #ffcc00 */
   padding: 15px 0;
   margin-bottom: 30px;
   border-radius: 18px;
@@ -117,7 +117,7 @@ body {
 .imagem-empresa {
   width: 450px;
   height: 435px;
-  border: 2px solid #ffcc00;
+  border: 2px solid #1976d2; /* alterado de #ffcc00 */
   border-radius: 8px;
   overflow: hidden;
   filter: grayscale(100%);
@@ -152,7 +152,7 @@ body {
 }
 
 .servico {
-  background-color: #ffcc00;
+  background-color: #1976d2; /* alterado de #ffcc00 */
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -160,7 +160,7 @@ body {
 
 .servico:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px #ffcc00;
+  box-shadow: 0 5px 15px #1976d2; /* alterado de #ffcc00 */
 }
 
 .servico img {
@@ -216,11 +216,12 @@ body {
     transition: filter 0.5s ease;
     width: 100%;
     height: 100%;
+    border-radius: 8px;
   }
 .box img:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
-  filter: blur(4px);
+  filter:blur(4px);
 }
 
 .box img:hover .overlay {
@@ -231,7 +232,7 @@ body {
 .rodape {
   background-color: #000000;
   padding: 30px 0 10px;
-  border-top: 1px solid #ffcc00;
+  border-top: 1px solid #1976d2; /* alterado de #ffcc00 */
 }
 
 .rodape-container {
@@ -251,7 +252,7 @@ body {
 }
 
 .rodape-titulo {
-  color: #ffcc00;
+  color: #1976d2; /* alterado de #ffcc00 */
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
@@ -263,7 +264,7 @@ body {
 }
 
 .rodape-coluna a:hover {
-  color: #ffcc00;
+  color: #1976d2; /* alterado de #ffcc00 */
 }
 
 .redes-sociais {
@@ -325,8 +326,8 @@ body {
     0px 187px 75px rgba(0, 0, 0, 0.01),
     0px 105px 63px rgba(0, 0, 0, 0.05),
     0px 47px 47px rgba(0, 0, 0, 0.09),
-    0px 12px 26px rgba(255, 174, 0, 0.1),
-    0px 0px 0px rgba(0, 0, 0, 0.1);
+    0px 12px 26px rgba(0, 123, 255, 0.1),
+    0px 0px 0px rgba(0, 0, 0, 0.5);
   padding: 20px; /* Espaçamento interno do cartão */
   margin: 10px; /* Espaçamento externo do cartão */
 }
@@ -526,7 +527,7 @@ body {
   padding: 12px 12px 10px 12px;
   font-size: 13px;
   outline: none;
-  caret-color: #ffcc00;
+  caret-color: #1976d2; /* alterado de #ffcc00 */
 }
 
 .text-box .formatting {
@@ -551,13 +552,13 @@ body {
 }
 
 .text-box .formatting button:hover {
-  background-color: #ffcc00;
+  background-color: #1976d2; /* alterado de #ffcc00 */
 }
 
 .text-box .formatting .send {
   width: 30px;
   height: 30px;
-  background-color: #ffcc00;
+  background-color: #1976d2; /* alterado de #ffcc00 */
   margin: 0 0 0 auto;
 }
 
