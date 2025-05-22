@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="Enviado.html" method="get">
+        <fieldset>
+            <!--fieldset serve para agrupar os campos-->
+            <legend>Endereço</legend>
+            <!--legend serve para o título do campo-->
+            <p>
+                <label for="Rua">Rua</label>
+                <input id="Rua" type="text" name="rua" placeholder="Digite o nome da rua">
+            </p>
+            <!--inserção de rua-->
+            <!--input serve para o usuário digitar o nome da rua-->
+            <p>
+                <label for="Numero">Numero</label>
+                <input id="Numero" type="number" name="numero" min="0" max="9999" placeholder="Digite o número da casa">
+            </p>
+            <!--inserção de numero-->
+            <!--label serve para o usuário digitar o nome da rua e ou os dados em geral-->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="input-email">E-mail</label>
+                <input id="input-email" type="email" name="email" placeholder="Digite seu e-mail" value="unifoa@gmail.com" readonly>
+            </p>
+            <!--inserção de e-mail-->
+            <!--type serve para o usuário digitar os dados exigidos-->
+            <!--input de e-mail serve para o usuário digitar o e-mail-->
+            <!--value serve para o usuário preencher o campo com um valor padrão-->
+            <!--readonly serve para o usuário apenas visualizar o campo desabilitando o input-->
+            <p>
+                <label for="input-telefone">Telefone</label>
+                <input id="input-telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" >
+                <!-- o pattern serve para validar o telefone, o required serve para obrigar o usuário a preencher o campo -->
+            </p>
+            <!--inserção de telefone-->
+            <!-- placeholder funciona como uma dica para o usuário na hora de preencher o campo -->
+        </fieldset>
+        <p>
+            <label for="url">URL</label>
+            <input type="url" name="url" placeholder="Digite o link do seu site">
+        </p>
+        <!--inserção de url-->
+
+        <p>
+            <label for="input-senha">Senha</label>
+            <input id="input-senha" type="password" name="senha" placeholder="Digite sua senha"  >
+        </p>
+        <!--required serve para obrigar o usuário a preencher o campo-->
+        <!--inserção de senha-->
+        <!--input de senha nao mostra o que foi digitado-->
+        <p>
+            <label for="input-data">Data</label>
+            <input id="input-data" type="date" name="data" >
+        </p>
+        <!--inserção de data-->
+        <!--input de data serve para o usuário escolher a data-->
+
+        <p>
+            <label for="input-data-hora">Data/hora</label>
+            <input id="input-data-hora" type="datetime-local" name="data-hora" >
+        </p>
+        <!--inserção de data/hora-->
+        <!--input de data/hora serve para o usuário escolher a data e a hora-->
+        <p>
+            <label for="hora">hora</label>
+            <input id="hora" type="time" name="hora" >
+        </p>
+        <!--inserção de hora-->
+        <!--input de hora serve para o usuário escolher a hora-->
+        <p>
+            <label for="input-mes">Mês</label>
+            <input id="input-mes" type="month" name="mes" >
+        </p>
+        <!--inserção de mês-->
+        <!--input de mês serve para o usuário escolher o mês-->
+        <p>
+            <label for="input-semana">Semana</label>
+            <input id="input-semana" type="week" name="semana" >
+        </p>
+        <!--inserção de semana-->
+        <!--input de semana serve para o usuário escolher a semana-->
+
+        <p>
+            <label for="termos">
+                <input id="termos" type="checkbox" name="termos"/>Li e aceito os termos de uso
+            </label>
+        </p>
+        <!--inserção de termos-->
+        <!--input de checkbox serve para o usuário aceitar os termos de uso-->
+
+        <p>
+            <label for="sim">
+                <input id="sim" type="radio" name="aceito"/>sim
+            </label>
+            <label for="nao">
+                <input id="nao" type="radio" name="aceito"/>não
+            </label>
+        </p>
+        <!--inserção de radio-->
+        <!--input de radio serve para o usuário escolher uma opção-->
+
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" value="#000000" disabled/>
+        </p>
+        <!--inserção de cor-->
+        <!--input de cor serve para o usuário escolher a cor-->
+        <!--value serve para o usuário escolher a cor que ele quer-->
+        <!--disabled serve para desabilitar o input-->
+
+        <p>
+            <label for="input-arquivo">arquivo</label>
+            <input id="input-arquivo" type="file" name="arquivo" accept=".mp3, .mp4, .png" multiple/>
+        </p>
+        <!--inserção de arquivo-->
+        <!--input de arquivo serve para o usuário enviar um arquivo-->
+        <!--multiple serve para o usuário enviar mais de um arquivo-->
+        <!--accept serve para o usuário escolher o tipo de arquivo que ele quer enviar-->
+
+        <p>
+            <label for="Range">Range</label>
+            <input id="Range" type="range" name="range" min="0" max="10"  step="5"/>
+        </p>
+        <!--inserção de range-->
+        <!--input de range serve para o usuário escolher um valor entre 0 e 10-->
+        <!--value serve para o usuário escolher o valor que ele quer-->
+        <!--step serve para definir de quantos em quantos numeros progride o range-->
+
+        <p>
+            <input type="hidden" name="protocolo" value="000123">
+        </p>
+        <!--inserção de hidden-->
+        <!--input de hidden serve para o usuário enviar um valor que não aparece no formulário-->
+
+         <p>
+            <input type="submit" value="Botão de envio"/>
+            <input type="reset" value="Limpar"/>
+            <input type="image" src="https://tse3.mm.bing.net/th?id=OIP.d83_wt0v8Gt_9jy6Vf3KrgAAAA&pid=Api&P=0&h=180&w=180" alt="Enviar" />
+         </p>
+        <!--inserção de submit-->
+        <!--input de submit serve para o usuário enviar o formulário-->
+        <!--input de reset serve para o usuário limpar o formulário-->
+        <!--input de image serve ultilizar uma imagem como botão-->
+
+        <p>
+            <label for="mensagem">mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="10" cols="30" placeholder="Digite sua mensagem"></textarea>
+        </p>
+        <!--inserção de textarea-->
+        <!--input de textarea serve para o usuário digitar uma mensagem-->
+        <!--rows serve para definir a altura do textarea-->
+        <!--cols serve para definir a largura do textarea-->
+        <p>
+            <label for="opcoes">Opções</label>
+            <select name="opcoes" id="opcoes">
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+        </p>
+        <!--inserção de select-->
+        <!--input de select serve para o usuário escolher uma opção-->
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    
+</body>
+</html>
