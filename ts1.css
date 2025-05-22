@@ -173,6 +173,7 @@ body {
   padding: 10px;
   text-align: center;
   color: #000000;
+  font-size: 20px;
 }
 
 /* Seção Dicas */
@@ -186,21 +187,21 @@ body {
   color: whitesmoke;
   margin-top: 10px;
 }
- .box  {
+.box {
   display: flex;
   height: 500px;
   justify-content: space-around;
   margin-top: 15px;
-  gap: 6px; 
+  gap: 6px;
 }
 
-.box img .overlay{
+.box img .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   color: #ffffff;
@@ -213,15 +214,15 @@ body {
 
 .box img {
   object-fit: cover;
-    transition: filter 0.5s ease;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-  }
+  transition: filter 0.5s ease;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
 .box img:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
-  filter:blur(4px);
+  filter: blur(4px);
 }
 
 .box img:hover .overlay {
@@ -577,4 +578,3 @@ body {
     opacity: 0;
   }
 }
-
